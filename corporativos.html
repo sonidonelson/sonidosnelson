@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>SONIDO NELSON PAGINA WEB</title>
+
+  <link rel="stylesheet" href="styles.cs">
+
+  <link rel="stylesheet" type="text/css" href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css 
+
+">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+
+<body>
+  
+  <div class="imgup">
+    <div class="mySlides fade">
+      <img src="coorporativo.avif" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="corp2.jfif" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="corp3.jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+ 
+  <div class="titu">
+    
+  </div>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa fa-bars"></i>
+    </label>
+    <label class="company" >SONIDO NELSON</label>
+   
+    <ul class="menup">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="paquetes.html">Paquetes</a></li>
+      <li><a href="quienes somos.html">Quienes Somos</a></li>
+   
+  </ul>
+  </nav>
+  <section></section>
+  <div class="fondo">
+  
+  <div class="container">
+    <h1 class="titulo">Eventos Corporativos</h1>
+    <p class="texto">La producción de un evento corporativo exige trabajar minuciosamente cada detalle, debemos analizar cada objetivo y necesidad de nuestros clientes, porque tenemos la certeza de que cada evento es único e irrepetible.</p>
+</div>
+
+<div class="contact-form">
+  <span class="heading">Contactanos</span>
+  <form>
+    <label for="name">Nombre:</label>
+    <input type="text" required="">
+    <label for="email">Correo Electronico:</label>
+    <input type="email" id="email" name="email" required="">
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" required=""></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+
+
+
+<footer>
+
+    <a href="https://wa.me/+59167263838?text=Hola!, quisiera mas informacion, gracias.,%20este%20es%20un%20mensaje%20predeterminado%20para%20WhatsApp." ><i class="fab fa-whatsapp whatsapp-icon"></i></a>
+
+    <a href="https://www.facebook.com/share/m4XBwqepVhM1MELM/?mibextid=qi2Omg" target="_blank"><i class="fab fa-facebook facebook-icon"></i></a>
+
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram-icon"></i></a>
+
+    <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok tiktok-icon"></i></a>
+
+</footer>
+  <script src="script.js"> </script>
+
+</body>
+
+</html>
+<style>
+
+  *{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+ 
+}
+.imgup {
+  max-width: 100%;
+
+ 
+  position: relative;
+  margin: 0%;
+  z-index: 1;
+ border: none;
+ border-top: none;
+ 
+
+}
+
+.mySlides {
+  height: 10%;
+  display: none;
+  padding: 0%;
+  text-align: center;
+  
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: opacity 3s ease-in-out
+ 
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Efecto de fundido */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+   .pinyon-script-regular {
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ h1{
+    font-family:  "Pinyon Script", serif;
+    color: #333;
+    width: 400px;
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+
+  }
+
+/*MENU*/
+
+nav {
+    background-color: black;
+    width: 100%;  /* Ocupa todo el ancho */
+    height: 80px;  /* Define la altura del menú */
+    position: fixed;  /* Fija el menú en la parte superior */
+    top: 0;  /* Posiciona el menú en la coordenada Y superior */
+    z-index: 10;  /* Asegura que el menú se superponga a otros elementos */
+  }
+  .company{
+    color: white;
+    font-size: 30px;
+    margin: 0 50px;
+    line-height: 80px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #ff0606,
+    20px 0px 25px #ff0606,
+    40px 0px 40px #ff0606,
+    80px 75px 75px #ff0606;
+    }
+ 
+nav ul{
+float:right;
+margin-right: 40px;
+}
+nav ul li{
+display: inline-block;
+padding: 0 30px;
+line-height: 80px;
+
+}
+nav ul li a{
+color: #ff0606;
+font-size: 16px;
+text-decoration: none;
+text-transform: uppercase;
+padding: 8px;
+margin: 40px 0;
+letter-spacing: 2px;
+border-top: 1px solid #ff0606;
+border-radius: 15px;
+font-weight: bold;
+}
+.menup{
+a:hover{
+background-color: #ff0606;
+color: white;
+box-shadow: 0 0 5px #ff0606,
+0 0 25px #ff0606,
+0 0 50px #ff0606,
+0 0 100px #ff0606;
+}
+
+}
+.checkbtn{
+color: white;
+float: right;
+font-size: 30px;
+margin-right: 40px;
+cursor: pointer;
+line-height: 80px;
+display:none;
+}
+#check{
+display:none;
+}
+@media(max-width:952px) {
+.company{
+  font-size: 30px;
+  padding-left: 40px;
+}
+nav ul li a {
+  font-size: 16px;
+}
+
+}
+@media(max-width: 858px)
+{
+.checkbtn{
+  display: block;
+}
+ul{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #222;
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+}
+nav ul li{
+  display: block;
+  line-height: 30px;
+  margin: 50px 0;
+}
+nav ul li a{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+a:hover{
+  background-color: #cf7777;
+}
+#check:checked ~ ul{
+  left: 0;
+}
+}
+section{
+
+background-size: cover;
+height: calc(100vh - 80px);
+height: auto;
+}
+
+
+ 
+.whatsapp-icon,
+.facebook-icon,
+.instagram-icon,
+.tiktok-icon {
+  font-size: 36px;
+  color: #ffffff;
+  align-content: center;
+ padding-left: 200px;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+footer{
+	background-color: black;
+	align-content: center;
+    width: 100%;
+	height: 60px;
+   padding-right: 0%;
+   padding-left: 0%;
+   padding-bottom: 20px;
+   margin-bottom: auto;
+   position: fixed;
+   bottom: 0;
+   
+}
+.product:hover{
+  transform: translateY(-20px);
+  color: #ccc;
+ 
+}
+.product-grid {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap; 
+}
+a{
+  padding: 3px;
+  color: white;
+  background-color: inherit;
+  color: #1b32fd;
+}
+@media (max-width: 991px){
+    Body{
+           padding:30px;
+        }
+    Form{
+          Width:340px;
+       }
+       .mySlides{
+        width: 100%;
+       }
+       .overlay{
+       padding-top: 2px;
+      
+       }
+       .titu{
+      padding-bottom: 15px;
+       }
+    }
+   
+    .fondo {
+  background-image: url(boda5.avif);
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  padding-bottom: 20px;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9)); /* Safari 5.1-6 */
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9)); /* Opera 11.10-12.1 */
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9)); /* Firefox 3.6-15 */
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9)); /* Standard syntax (must be last) */
+
+  border-style: dotted;
+  border-width: 6px 6px 6px 6px;
+  border-color: #202020;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex; 
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.container {
+  display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+ 
+    
+    padding: 50px;
+    text-align: center;
+    
+}
+
+.titulo {
+    font-size: 78px;
+    color: #202020;
+}
+
+.texto {
+    font-size: 24px;
+    color: #666;
+    text-align: left;
+}
+/* cotizar */ 
+
+.contact-form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+.contact-form label {
+  color: black;
+}
+
+.contact-form .heading {
+  font-size: 24px;
+  color: black;
+  ;
+  margin-bottom: 12px;
+  font-weight: bold;
+  display: block;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+  width: 200px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ff6384;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #ff6384;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+</style>
